@@ -19,12 +19,18 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
         num += 1
-        x = num%1600
+        x = num % 1600
+        tmr += 1
+        y = tmr % 100
+        z = 0
+        if 0 <= y <= 50:
+            z = 0
+        else:
+            z = 1
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_imgs, [1600-x, 0])
-        screen.blit(kk_imgs[tmr%2], [300, 200])
-        pg.display.update()
-        tmr += 1        
+        screen.blit(kk_imgs[z], [300, 200])
+        pg.display.update()       
         clock.tick(100)
 
 
