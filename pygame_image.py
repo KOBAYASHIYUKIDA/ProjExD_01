@@ -32,7 +32,7 @@ def main():
         screen.blit(bg_img, [3200-x, 0])
         screen.blit(kk_imgs[z], [300, 200])
         pg.display.update()       
-        clock.tick(100)
+        clock.tick(500)
 
 
 if __name__ == "__main__":
