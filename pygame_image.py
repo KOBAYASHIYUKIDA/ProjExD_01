@@ -18,12 +18,12 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-        num += 1
         x = num % 1600
-        tmr += 1
-        y = tmr % 100
+        y = tmr % 250
         z = 0
-        if 0 <= y <= 50:
+        tmr += 1
+        num += 1
+        if 0 <= y <= 125:
             z = 0
         else:
             z = 1
