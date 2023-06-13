@@ -8,6 +8,7 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("ex01/fig/pg_bg.jpg")
     bg_imgs = pg.image.load("ex01/fig/pg_bg.jpg")
+    bg_img = pg.transform.flip(bg_imgs, True, False)
     kk_img = pg.image.load("ex01/fig/3.png")
     kk_img = pg.transform.flip(kk_img, True, False)
     kk_imgs = [kk_img, pg.transform.rotozoom(kk_img, 10, 1.0)]
